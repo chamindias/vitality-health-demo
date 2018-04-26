@@ -24,12 +24,12 @@ mvn clean install
 
 4. Find the below section in Product_Home/repository/conf/identity/identity.xml
 
-<SupportedGrantType>
-<GrantTypeName>password</GrantTypeName>
-<GrantTypeHandlerImplClass>org.wso2.carbon.apimgt.keymgt.handlers.ExtendedPasswordGrantHandler</GrantTypeHandlerImplClass>          
-</SupportedGrantType>
+&lt;SupportedGrantType>
+&lt;GrantTypeName>password&lt;/GrantTypeName>
+&lt;GrantTypeHandlerImplClass>org.wso2.carbon.apimgt.keymgt.handlers.ExtendedPasswordGrantHandler&lt;/GrantTypeHandlerImplClass>
+&lt;/SupportedGrantType>
 
-Replace "<GrantTypeHandlerImplClass>org.wso2.carbon.apimgt.keymgt.handlers.ExtendedPasswordGrantHandler</GrantTypeHandlerImplClass>" with "<GrantTypeHandlerImplClass>org.soasecurity.is.oauth.grant.password.VitalityCustomPasswordGrant</GrantTypeHandlerImplClass>"
+Replace "org.wso2.carbon.apimgt.keymgt.handlers.ExtendedPasswordGrantHandler" with "org.soasecurity.is.oauth.grant.password.VitalityCustomPasswordGrant"
 
 5. Save it and start the server.
 
