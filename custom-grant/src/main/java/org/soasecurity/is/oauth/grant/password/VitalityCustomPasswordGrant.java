@@ -40,7 +40,7 @@ public class VitalityCustomPasswordGrant extends PasswordGrantHandler {
             AuthenticatedUser user = new AuthenticatedUser();
             //we assume that we are using super tenant
             user.setTenantDomain("carbon.super");
-            user.setUserName(username);
+            user.setUserName(userUid);
             user.setAuthenticatedSubjectIdentifier(userUid);
             tokReqMsgCtx.setAuthorizedUser(user);
             return true;
